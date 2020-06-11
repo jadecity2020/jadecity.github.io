@@ -1,0 +1,229 @@
+/* * {
+    margin:0;
+    padding:0;
+} */
+
+/* font-family: 'Bungee Inline', cursive;
+font-family: 'Orbitron', sans-serif; for titles
+font-family: 'Pirata One', cursive; for quotes
+font-family: 'Lobster', cursive; Image text: name
+font-family: 'Cedarville Cursive', cursive; Image text: quote
+ */
+ html {
+    scroll-behavior: smooth;
+}
+
+p {
+    margin:0px 0px 0px 0px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+}
+.grid-container{
+    display:grid;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color:rgb(224,224,213);
+}
+.header-image {
+    margin-top:50px;
+    background-image: url(https://res.cloudinary.com/jadecity2020/image/upload/v1591890447/31_ww8fer.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center center;
+}
+.image-text {
+    padding-top: 230px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+#image-text-id{
+    color:white;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    margin-top: 60px;
+    background-color:rgb(224,224,213);
+}
+.pic {
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 50px;
+}
+nav{
+    display: flex;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100vw;
+    background-color:rgb(156, 156, 149);;
+    z-index: 1000;
+}
+.header-name {
+    text-align: center;
+    padding-bottom: 10px;
+}
+header nav button {
+    margin-top: 10px;
+    margin-left:10px;
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid black;
+    height: 40px;
+  }
+  nav ul a{
+      text-decoration: none;
+      color:black;
+      font-family: 'Orbitron', sans-serif;
+      padding-left: 10px;
+  }
+span {
+    height: 1px;
+    width: 20px;
+    margin: 4px 0;
+    background-color: black;
+    display: block;
+  }
+.navigation-unordered-list{
+    display: flex;
+    display: none;
+}
+
+.navigation-unordered-list-desktop{
+    display:none;
+}
+
+.open .navigation-unordered-list {
+    position: fixed;
+    left: 0; /*starts at 0 px from the left */
+    top: 0;
+    height: 15vh; /* 100 viewheight */
+    width: 100vw; /* 100 viewwidth */
+    display: block;
+    background-color: rgb(156, 156, 149);
+    padding: 30px;
+    z-index:1000;
+  }
+li {
+    text-decoration: none;
+    list-style: none;
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(224,224,213);
+}
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.about-meh {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-mep {
+    font-size: 1rem;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 20px 20px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#project-header {
+
+}
+.project-onclick {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
+    margin: 5px;
+}
+
+
+.contact {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top:30px;
+    background-color: rgb(224,224,213);
+}
+.contact-me {
+    display: block;
+    margin-left: 20px
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+}
+.contact-p{
+    display: flex;
+    height: 50px;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    height: 100px;
+    resize: none;
+    overflow: auto;
+    flex-basis: auto;
+    margin-right:0px;
+}
+.card {
+    background-color: rgb(224, 224, 213);
+}
+.contact-form p {
+    margin-left: 20px;
+}
+input{
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-form{
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+    button{
+    display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-name{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .navigation-unordered-list-desktop {
+        display:flex;
+        justify-content: right;
+    }
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Orbitron:wght@500&family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to JadeCity</title>
+</head>
+<body class='grid-container'> 
+    <header class='header'>
+        <nav>
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>            
+            </button>
+            <h1 class='header-name'>Jim J Chen</h1>
+            <ul class='navigation-unordered-list'>
+                <button class="close">
+                    x                
+                </button>
+                <li><a href="#about-me-id" class='mobile-anchor'>About Me</a></li>
+                <li><a href="#project-scroll" class='mobile-anchor'>Projects</a></li>
+                <li><a href=#contact-me-scroll class='mobile-anchor'>Contact Information</a></li>
+            </ul>
+            <ul class='navigation-unordered-list-desktop'>
+                <li><a href="#about-me-id">About Me</a></li>
+                <li><a href="#project-scroll">Projects</a></li>
+                <li><a href=#contact-me-scroll>Contact Information</a></li>
+            </ul>
+        </nav>
+        <div class="header-image">
+            <h1 class="image-text">-Jim Chen-</h1>
+            <p id="image-text-id"> One step at a time</p>
+        </div>
+        <div class='profile'>
+            <img class= "pic"src='https://res.cloudinary.com/jadecity2020/image/upload/v1591647345/WechatIMG1_hdeid5.jpg' alt='Profile Picture'>   
+        </div>
+        <div class='about-me' id="about-me-id">
+            <h1 class= 'about-meh'  id="about-me-scroll">Hi! My name is Jim Chen</h1>
+            <p class= 'about-mep'>I am currently a software engineer student at General Assembly's SEIR program! I have listed a few projects that I worked on below</p>
+            <p class= 'about-mep'> Check them out!</p>
+        </div>
+    </header>
+    <main>
+        <div class='projects' id='project-scroll'>  
+            <h1 id='project-header'>Projects</h1>      
+            <div class="project-onclick">
+                <!-- <div class="card" style="width: 18rem;">
+                    <img src="https://res.cloudinary.com/jadecity2020/image/upload/v1591684827/random_imager_xshgin.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Random Imager</h5>
+                      <p class="card-text">A project where the user can click to add card and click the added card disappear!</p>
+                      <a href="#" class="btn btn-primary">Check it out!</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://res.cloudinary.com/jadecity2020/image/upload/v1591684827/grid_box_g0rebl.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">CSS Grid</h5>
+                      <p class="card-text">Introduction to Grids in CSS</p>
+                      <a href="#" class="btn btn-primary">Check it out!</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://res.cloudinary.com/jadecity2020/image/upload/v1591684827/responsive_design_hykzuk.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Responsive Design</h5>
+                      <p class="card-text">A project that applies responsive design</p>
+                      <a href="#" class="btn btn-primary">Check it out!</a>
+                    </div> -->
+                  </div>
+            </div>
+        </div>
+        <div class='contact'>
+            <div class="contact-me" id="contact-me-scroll">
+                <h2>Contact Me at:</h2>
+                <p>Tel: (646)-898-8817</p>
+                <p>Email: Jim.Jiyan.Chen@gmail.com</p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/jim-j-chen/">https://www.linkedin.com/in/jim-j-chen/</a></p>
+            </div>
+            <div class= "contact-form">
+                <h2>Leave a brief message!</h2>
+                <div class= 'contact-p'>
+                    <p>Telephone: <input type="text" placeholder="Telephone"></p>
+                    
+                </div>
+                <div class= 'contact-p'>
+                    <p>Email: <input type="text" placeholder="Email"></p>
+                    
+                </div>
+                <div>
+                    <p>Leave a detailed message below:<textarea class='message' placeholder="Your message..."></textarea></p>
+                    
+                    <input type="submit" value='Submit'>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
