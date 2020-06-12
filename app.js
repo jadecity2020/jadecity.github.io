@@ -37,7 +37,7 @@ function app(projectsArr) {
                         <div class="card-body">
                             <h5 class="card-title">${projectData.title}</h5>
                             <p class="card-text">${projectData.description}</p>
-                            <a href="#" class="btn btn-primary">Check it Out!</a>
+                            <a href="${projectData.url}" class="btn btn-primary">Check it Out!</a>
                         </div>    
                         </div>`)
                         console.log($p1)

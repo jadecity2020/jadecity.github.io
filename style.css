@@ -144,9 +144,9 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
 }
-#project-header {
+/* #project-header {
 
-}
+} */
 .project-onclick {
     display: flex;
     justify-content: space-evenly;
