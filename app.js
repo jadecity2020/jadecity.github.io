@@ -1,6 +1,6 @@
 const sheetUrl = 'https://docs.google.com/spreadsheets/d/1kUpTGLGYXhgrJhwCIrDKZd2zBJDSItpCdSQWKjaboZo/edit?usp=sharing'
 //sheetAsJSON is how we pull the data as JSON (Javascript Object Notation)
-let sheetAsJSON = 'https://docs.google.com/spreadsheets/d/1kUpTGLGYXhgrJhwCIrDKZd2zBJDSItpCdSQWKjaboZo/gviz/tq'
+let sheetAsJSON = 'https://gsx2json.com/api?id=1kUpTGLGYXhgrJhwCIrDKZd2zBJDSItpCdSQWKjaboZo&sheet=Sheet1'
 const $navButtons=$('nav button')
 const $nav= $('nav')
 const $mobileNav=$('.mobile-anchor')
